@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: rgb(44, 44, 44);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+.divisao-logo:nth-of-type(1){
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.644);
+    position: relative;
+    animation-name: opacity-1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.divisao-logo:nth-of-type(2){
+    width: 50%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.582);
+    border-left: 3px solid whitesmoke;
+    position: relative;
+    animation-name: opacity-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#logo-1{
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/logo-CT-fundo.png);
+    background-size: 80px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#logo-2{
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/img-TR-fundo-removebg-preview.png);
+    background-size: 80px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#container-logo-cs{
+    width: 100px;
+    height: 40px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 30px;
+    left: calc(100% - 50px);
+    z-index: 2;
+    border-radius: 100px;
+    padding-bottom: 3px;
+}
+
+#logo-cs{
+    width: 100px;
+    height: 40px;
+    background-image: url(../images/logo-cs-removebg-preview.png);
+    background-size: 100px 40px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 590px;
+    background-image: url(../images/csgo-image.webp);
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 100%;
+    height: 500px;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+form .header{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.445);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.corpo{
+    background-color: rgba(255, 255, 255, 0.459);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container-inputs{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+.input-wraper label{
+    display: none;
+    position: absolute;
+    margin-left: 20px;
+    color: rgb(0, 185, 0);
+}
+
+.preencher{
+    width: 100%;
+    min-height: 35px;
+    line-height: 35px;
+    padding-left: 20px;
+    outline: none;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.459);
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.preencher:focus{
+    background-color: rgba(255, 255, 255, 0.74);
+}
+
+input:not(input[type=submit])::placeholder{
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    transition: 0.5s;
+}
+
+.preencher:focus::placeholder{
+    color: rgba(0, 0, 0, 0.603);
+}
+
+.button-wraper{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    padding: 30px 0;
+}
+
+input[type=submit]{
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    background-color: royalblue;
+    outline: none;
+    border: none;
+    position: relative;
+    top: -20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(32, 77, 214);
+    transform: scale(1.1);
+}
+
+@keyframes opacity-1{
+    0%{
+        background-color: rgba(0, 0, 255, 0.466);
+    }
+
+    50%{
+        background-color: rgba(1, 1, 255, 0.774);
+    }
+
+    100%{
+        background-color: rgba(0, 0, 255, 0.444);
+    }
+    
+}
+
+@keyframes opacity-2{
+    0%{
+        background-color: rgba(255, 0, 0, 0.466);
+    }
+
+    50%{
+        background-color: rgba(255, 0, 0, 0.774);
+    }
+
+    100%{
+        background-color: rgba(255, 0, 0, 0.466);
+    }
+}
